@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="gv_bulkUnit"    text="Schüttgut-Einheit"/>
+        <text name="gv_unit_m3"     text="Kubikmeter (m³)"/>
+        <text name="gv_unit_bushel" text="Bushel (bu)"/>
+        <text name="gv_unit_ton"    text="Tonnen (t)"/>
+        <text name="gv_unit_liter"  text="Liter (l)"/>
+    </texts>
+</l10n>

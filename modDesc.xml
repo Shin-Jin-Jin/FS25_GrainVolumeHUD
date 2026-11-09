@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="116">
+    <author>Florian (Shin_Jin_Jin)</author>
+    <version>1.1.0.0</version>
+
+    <title>
+        <de>Getreide Volumen HUD</de>
+        <en>Grain Volume HUD</en>
+    </title>
+
+    <description>
+        <de><![CDATA[Kennt ihr das? Ihr fahrt mit einem randvollen Anhänger über den Hof, schaut aufs Display – und da steht: 42.000 Liter Weizen. Liter? Bei Getreide? Wer misst denn einen ganzen Berg Weizen in Litern!
+
+Wasser, Milch, Diesel – die kann man eingießen und in Litern messen, klar. Aber Getreide, Silage, Hackschnitzel? Das ist ein Haufen, kein Getränk. Und einen Haufen misst man eben anders.
+
+Und genau das macht diese Mod. Sie schaut nach, was in eurem Anhänger steckt. Ist es Schüttgut? Dann rechnet sie die Liter blitzschnell in eure Wunsch-Einheit um und schreibt sie ins Display. Ist es dagegen eine Flüssigkeit – Wasser, Gülle, Diesel – dann bleibt alles wie gehabt in Litern. Denn da gehören die Liter ja auch hin.
+
+Ihr habt die Wahl, in welcher Einheit das Schüttgut angezeigt wird:
+– Kubikmeter (m³) – aus 42.000 Litern werden 42,0 m³
+– Bushel (bu) – das amerikanische Scheffelmaß
+– Tonnen (t) – nach echtem Gewicht, denn ein Berg Silage wiegt anders als ein Berg Weizen
+
+Eingestellt wird die Einheit direkt im Spiel unter Einstellungen → Allgemein („Schüttgut-Einheit“) – oder in der Datei modSettings/GrainVolumeHUD.xml (unit = M3, BUSHEL, TON oder LITER). Sonst müsst ihr nichts drücken: Ihr ladet wie immer, schaut aufs Display – und seht mit einem Blick, wie viel wirklich drauf ist.
+
+Und deshalb zeigt euer Füllstand-HUD ab jetzt die Einheit, die zu dem passt, was ihr geladen habt.
+
+Was die Mod tut:
+– Schüttgut (Getreide, Silage, Gras, Hackschnitzel, Wurzelfrüchte …) in m³, Bushel oder Tonnen
+– Flüssigkeiten (Wasser, Milch, Diesel, Gülle, Flüssigdünger …) bleiben in Litern
+– Einheit frei wählbar – direkt im Spielmenü oder in einer kleinen Einstellungsdatei
+– Multiplayer-tauglich (reine Anzeige, kein Eingriff ins Spiel)
+
+—————————————
+Changelog
+
+1.1.0.0:
+- Neu: Auswahl der Anzeige-Einheit für Schüttgut – Kubikmeter (m³), Bushel (bu), Tonnen (t) oder Liter (l)
+- Neu: Einstellung direkt im Spiel unter Einstellungen → Allgemein („Bulk Unit“ / „Schüttgut-Einheit“)
+- Neu: Einstellung wird pro Spieler gespeichert – auch im Multiplayer
+- Neu: Deutsche und englische Übersetzung
+- Tonnen werden anhand der echten Fülltyp-Dichte berechnet
+- Flüssigkeiten bleiben unverändert in Litern
+
+1.0.0.0:
+- Erste Version – Schüttgut im Füllstand-HUD in Kubikmetern (m³) statt Litern]]></de>
+        <en><![CDATA[Ever noticed this? You pull up with a trailer filled to the brim, glance at the display – and it reads: 42,000 litres of wheat. Litres? For wheat? Who measures a whole heap of grain in litres!
+
+Water, milk, diesel – sure, you can pour those and measure them in litres. But grain, silage, woodchips? That's a heap, not a drink. And a heap is measured differently.
+
+And that's what this mod does. It looks at what's sitting in your trailer. Bulk goods? It quickly turns the litres into your unit of choice on the display. A liquid instead – water, slurry, diesel? Then everything stays in litres, because that's exactly where litres belong.
+
+You choose how bulk goods are shown:
+– Cubic metres (m³) – 42,000 litres becomes 42.0 m³
+– Bushels (bu) – the American dry measure
+– Tons (t) – by real weight, because a heap of silage weighs differently than a heap of wheat
+
+Set the unit right in the game under Settings → General ("Bulk Unit") – or in the file modSettings/GrainVolumeHUD.xml (unit = M3, BUSHEL, TON or LITER). Nothing else to press: load as always, look at the display, and see at a glance how much is really on there.
+
+And so your fill-level HUD now shows the unit that fits what you've loaded.
+
+What the mod does:
+– Bulk goods (grain, silage, grass, woodchips, root crops …) in m³, bushels or tons
+– Liquids (water, milk, diesel, slurry, liquid fertiliser …) stay in litres
+– Unit freely selectable – right in the game menu or in a small settings file
+– Multiplayer-friendly (display only, no changes to gameplay)
+
+—————————————
+Changelog
+
+1.1.0.0:
+- New: choose the display unit for bulk goods – cubic metres (m³), bushels (bu), tons (t) or litres (l)
+- New: setting right in the game under Settings → General ("Bulk Unit")
+- New: setting is stored per player – also in multiplayer
+- New: German and English translation
+- Tons are calculated from the real fill-type density
+- Liquids stay in litres, unchanged
+
+1.0.0.0:
+- First release – bulk goods in the fill-level HUD in cubic metres (m³) instead of litres]]></en>
+    </description>
+
+    <l10n filenamePrefix="translations/translation"/>
+
+    <iconFilename>icon_grainVolumeHUD.dds</iconFilename>
+
+
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/GrainVolume.lua"/>
+        <sourceFile filename="scripts/GrainVolumeSettings.lua"/>
+        <sourceFile filename="scripts/GrainVolumeHUD.lua"/>
+    </extraSourceFiles>
+</modDesc>

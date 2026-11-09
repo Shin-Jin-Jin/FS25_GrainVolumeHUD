@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="gv_bulkUnit"    text="Bulk Unit"/>
+        <text name="gv_unit_m3"     text="Cubic metres (m³)"/>
+        <text name="gv_unit_bushel" text="Bushels (bu)"/>
+        <text name="gv_unit_ton"    text="Tons (t)"/>
+        <text name="gv_unit_liter"  text="Litres (l)"/>
+    </texts>
+</l10n>
